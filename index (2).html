@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head>
+
+  </head>
+  <title>My Selfie App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <body>
+    <h1>Selfie Collage App</h1>
+     
+  <div class="container">
+   
+   <div class="row">
+        <div class="col-md-6">
+            <label> Live webcam Preview  </label>
+            <br>
+            <div id="camera"></div>
+            <br>
+            <button onclick="take_snapshot();" class="btn  btn-info w-50">Capture Images</button>
+        </div>
+<br><br>
+        <div class="form-group">
+          <h3>Say "Selfie" for taking your selfie and making a collage at least 3 times or take your selfies manually</h3>
+          <label>Your voice output : </label>
+          <textarea class="form-control" id="textbox" readonly="true"></textarea>
+
+      </div>
+      <button class="btn btn-primary" onclick="start()">Start</button>
+      <h3>Press the Start button</h3>
+
+        <div class="col-md-6">
+            <label>Your collage  </label>
+            <div id="result"></div>
+            <br>
+            <button onclick="check();" class="btn  btn-info w-50">Identify Image</button>
+        </div>
+   </div>
+   <br><br>
+   <iframe src="images (3).jpg"></iframe>
+    <script src="sketch.js"></script>
+  
+
+</body></html>
